@@ -51,7 +51,7 @@ variable could be the most frequent term during the development.
 #### control flow
 - prefer promise than callback
 
-> async/await is more powerfull too.
+> async/await is powerfull too.
 ### branching
 - use short-circuiting or default value
 
