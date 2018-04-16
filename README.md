@@ -92,6 +92,10 @@ variable could be the most frequent term during the development.
 
 - avoid drawing comment
 
+- never lie
+
+- comment should keep up with the relevant code
+
 - prefer meaningfull naming than comment
 ## Stay Scaleable
 ### enhance
