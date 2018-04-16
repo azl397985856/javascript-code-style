@@ -81,6 +81,10 @@ variable could be the most frequent term during the development.
 ### Testing
 - single concept per test
 ### Format
+- beatifull
+
+- consistant
+
 ### Comment
 - comment the key part which is hard to understand
 
