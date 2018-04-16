@@ -28,6 +28,21 @@ for eample, SOD can be apply to both object-oriented and functional programming.
 ### Dependency inversion principle
 ## Keep Clean
 ### Variable
+variable could be the most frequent term during the development.
+#### naming
+- use meaningful name
+
+- use pronouceable name
+
+- use consistent vacabulary
+
+- use seachable name
+
+- use explanatory name
+
+- avoid unnecessary context
+### branching
+- use short-circuiting or default value
 ### Function
 ### Error
 ### testing
