@@ -48,6 +48,10 @@ variable could be the most frequent term during the development.
 #### type
 
 - prefer const
+#### control flow
+- prefer promise than callback
+
+> async/await is more powerfull too.
 ### branching
 - use short-circuiting or default value
 
@@ -70,10 +74,25 @@ variable could be the most frequent term during the development.
 #### one level of abstraction
 #### only do one thing(Single responsibility principle)
 #### write less
+#### caller and callee should be close
 ### Error
+- dont't catch error silently
+> print , stash, notify the user or send it to remote sever.
 ### Testing
+- single concept per test
 ### Format
 ### Comment
+- comment the key part which is hard to understand
+
+- remove the commented code
+
+- comment the necessary info
+
+> create, ltime etc
+
+- avoid drawing comment
+
+- prefer meaningfull naming than comment
 ## Stay Scaleable
 ### enhance
 
