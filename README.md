@@ -32,6 +32,8 @@ variable could be the most frequent term during the development.
 #### naming
 - use meaningful name
 
+> the naming 'flag' is terrible
+
 - use pronouceable name
 
 - use consistent vacabulary
@@ -41,6 +43,8 @@ variable could be the most frequent term during the development.
 - use explanatory name
 
 - avoid unnecessary context
+
+- never lie
 #### type
 
 - prefer const
@@ -50,7 +54,22 @@ variable could be the most frequent term during the development.
 - use Strategy or polymorphism
 
 - use Chain of Responsibility
+
+- split it into diffrent functions
+
+- encapsulate conditions
+
+> if (doorKeeper(v))
+
+- avoid negative conditions
 ### Function
+#### prefer fewer arguments
+#### prefer pure function
+#### prefer functional than imperative
+#### be careful about the global functions(include methods on prototype)
+#### one level of abstraction
+#### only do one thing(Single responsibility principle)
+#### write less
 ### Error
 ### Testing
 ### Format
