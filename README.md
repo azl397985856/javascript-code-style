@@ -51,11 +51,11 @@ variable could be the most frequent term during the development.
 ### branching
 - use short-circuiting or default value
 
-- use Strategy or polymorphism
+- use Strategy or polymorphism(Open/closed principle)
 
-- use Chain of Responsibility
+- use Chain of Responsibility(Open/closed principle)
 
-- split it into diffrent functions
+- split it into diffrent functions(Single responsibility principle)
 
 - encapsulate conditions
 
@@ -76,6 +76,8 @@ variable could be the most frequent term during the development.
 ### Comment
 ## Stay Scaleable
 ### enhance
+
+> Dependency inversion principle
 
 
 ## Abstraction Oriented
