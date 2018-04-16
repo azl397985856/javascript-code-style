@@ -104,3 +104,10 @@ variable could be the most frequent term during the development.
 
 
 ## Abstraction Oriented
+The key of software development is to find out the variable and invariable.
+
+Then programming for the invariable part, make the effect of variable things under control.
+
+Also called programming for abstraction.
+
+Only that can you write reuseable, mantainable and scaleable code.
