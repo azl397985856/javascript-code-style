@@ -41,11 +41,18 @@ variable could be the most frequent term during the development.
 - use explanatory name
 
 - avoid unnecessary context
+#### type
+
+- prefer const
 ### branching
 - use short-circuiting or default value
+
+- use Strategy or polymorphism
+
+- use Chain of Responsibility
 ### Function
 ### Error
-### testing
+### Testing
 ### Format
 ### Comment
 ## Stay Scaleable
