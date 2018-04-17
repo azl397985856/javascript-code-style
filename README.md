@@ -97,6 +97,28 @@ function getUserInfo()
 ### branching
 - use short-circuiting or default value
 
+```js
+// bad
+function downloadFile({_filename, _encoding}) {
+   let filename = 'untitled.txt';
+   let encoding = 'utf-8'
+   if (filename) {
+    filename = _filename;
+   }
+   if (encoding) {
+    encoding = _encoding;
+   }
+   // ....
+}
+
+// good
+function downloadFile({filename = 'untitled.txt', _encoding}) {
+   const encoding = _encoding || 'utf-8';
+   // ....
+}
+
+```
+
 - use Strategy or polymorphism(Open/closed principle)
 
 - use Chain of Responsibility(Open/closed principle)
@@ -105,7 +127,16 @@ function getUserInfo()
 
 - encapsulate conditions
 
-> if (doorKeeper(v))
+```js
+// bad
+if (number === 0 && (1 / number) === -Infinity)
+// good
+function isNegativeZero(number) {
+   return number === 0 && (1 / number) === -Infinity
+}
+
+if (isNegativeZero(number))
+```
 
 - avoid negative conditions
 ### Expression
