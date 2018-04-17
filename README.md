@@ -66,6 +66,9 @@ variable could be the most frequent term during the development.
 > if (doorKeeper(v))
 
 - avoid negative conditions
+### Expression
+- prefer iterator than loop
+> recursive bahave better under particular cucircumstance。
 ### Function
 #### prefer fewer arguments
 #### prefer pure function
@@ -113,5 +116,9 @@ The key of software development is to find out the variable and invariable.
 Then programming for the invariable part, make the effect of variable things under control.
 
 Also called programming for abstraction.
+
+Compare with traditional Oject Orintend Programming(OOP), Functional Programming(FP) is more superior.
+with the help of 'no data style' , aka 'pointfree', you can separate the details from the logic.
+So you can leave the details alone, make the logic pure.
 
 Only that can you write reuseable, mantainable and scaleable code.
