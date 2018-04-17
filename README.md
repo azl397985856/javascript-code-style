@@ -196,6 +196,26 @@ if (isNegativeZero(number))
 #### caller and callee should be close
 ### Error
 - dont't catch error silently
+
+```js
+// bad
+const logger = console.log.bind(console)
+fetch('http://www.test.com')
+ .then(notifyUser)
+ .catch(logger)
+ 
+// good
+
+fetch('http://www.test.com')
+ .then(notifyUser)
+ .catch(err => {
+  // You can do it all or just pick one
+  console.error(err)
+  notifyUser(err)
+  sendErrToServer(err)
+ })
+
+```
 > print , stash, notify the user or send it to remote sever.
 ### Testing
 - single concept per test
@@ -220,6 +240,15 @@ if (isNegativeZero(number))
 - comment should keep up with the relevant code
 
 - prefer meaningfull naming than comment
+
+```js
+// bad
+// means the date of the today
+const yyyyMMdd;
+
+// good
+const today;
+```
 ## Stay Scaleable
 ### enhance
 
