@@ -32,11 +32,53 @@ variable could be the most frequent term during the development.
 #### naming
 - use meaningful name
 
-> the naming 'flag' is terrible
+```js
+// bad
+// i don't know what it exactly mean
+const flag = true;
+
+// good
+const downloaded = true;
+const enabled = true;
+```
+
 
 - use pronouceable name
 
+```js
+// bad
+// also meaningless
+const yyyyMMdd;
+
+// good
+const today;
+```
+
 - use consistent vacabulary
+
+```js
+// bad
+
+// file1
+function getUserData()
+// file2
+function fetchUserData()
+// file3
+function getUserRecord()
+// file4
+function getUserInfo()
+
+// good
+
+// file1
+function getUserInfo()
+// file2
+function getUserInfo()
+// file3
+function getUserInfo()
+// file4
+function getUserInfo()
+```
 
 - use seachable name
 
