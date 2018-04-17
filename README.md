@@ -81,12 +81,55 @@ function getUserInfo()
 ```
 
 - use seachable name
+```js
+// bad
+for(let i=0;i<5;i++) {
+ // ...
+}
 
+// good
+const COUNT = 5;
+for(let i=0;i<COUNT;i++) {
+ // ...
+}
+```
 - use explanatory name
 
-- avoid unnecessary context
+```js
 
+// bad
+if (!group) {
+  return pictureCollect.list;
+}
+return getListByGroup(group, pictureCollect.list);
+
+// good
+const getAllList = list => list;
+// const getAllList = R.identity(list)
+if (!group) {
+  return getAllList(pictureCollect.list);
+}
+return getListByGroup(group, pictureCollect.list);
+```
+
+- avoid unnecessary context
+```js
+// bad
+const phone = {
+ phoneOwner: 'lucifer',
+ phoneSize: ''
+}
+
+// good
+const phone = {
+ owner: 'lucifer',
+ size: ''
+}
+
+```
 - never lie
+
+> program never lie, but the comments(also the name) could.
 #### type
 
 - prefer const
