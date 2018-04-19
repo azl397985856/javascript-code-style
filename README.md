@@ -20,7 +20,7 @@ These princeples base on the object-oriented design,
 so maybe itsn't quit suitable for other programming paradigm。
 even so, it covers most cases.
 
-for eample, SOD can be apply to both object-oriented and functional programming.
+for example, SOD can be apply to both object-oriented and functional programming.
 ### Single responsibility principle
 ### Open/closed principle
 ### Liskov substitution principle
