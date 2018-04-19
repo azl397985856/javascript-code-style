@@ -320,6 +320,9 @@ function decorator(app) {
 
 It's quit simple, but totally different.
 
+- app's params telling the truth
+- decoupled from dependencies
+
 And we also can change the app's behaivor.
 
 ```js
