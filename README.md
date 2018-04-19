@@ -306,7 +306,8 @@ the dependencies is injected by something which made the app easy to test and sc
 
 the decorator may be just like this:
 
-```
+```js
+// for simplicity sake
 import a from '../../a.js'
 import b from '../../../b.js'
 import a from '../c.js'
