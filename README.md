@@ -359,4 +359,8 @@ Compare with traditional Oject Orintend Programming(OOP), Functional Programming
 with the help of 'no data style' , aka 'pointfree', you can separate the details from the logic.
 So you can leave the details alone, make the logic pure.
 
+> I want to address just one more point, which is that people sometimes say that having no abstractions at all is better than having the wrong abstractions. What this really means is that the cost of the wrong abstraction is very high, so be careful. I think this is sometimes misinterpreted. It does not mean that you should have no abstractions. **It just means you have to be very careful.**
+
+We have to become good at finding the right abstractions.
+
 Only that can you write reuseable, mantainable and scaleable code.
