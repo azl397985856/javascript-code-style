@@ -252,8 +252,98 @@ const today;
 ## Stay Scaleable
 ### enhance
 
-> Dependency inversion principle
 
+
+#### Hollywood Principle
+I have always admired the cleverness of the name Hollywood Principle. The essence of this principle is “Don’t call me, I’ll call you”. As you know, this is a response you might hear after auditioning for a role in a Hollywood movie. And this is the same concept for the software Hollywood Principle too. The intent is to take care to structure and implement your dependencies wisely.
+
+
+for example:
+
+```js
+
+import a from '../../a.js'
+import b from '../../../b.js'
+import a from '../c.js'
+
+function app() {
+   return {
+    start() {
+     a.start();
+     b.start();
+     c.start();
+     console.log('app stared~')
+    }
+   }
+}
+
+
+```
+
+We write code which directly depends on a,b and c.
+When any of them changes its api or location,
+you must follow the steps.
+
+```js
+var { decorator } = require("./decorator.public.js");
+
+function app({a, b, c}) {
+   return {
+    start() {
+     console.log('app stared~')
+    }
+   }
+}
+
+// enhance
+// = IOC + decorator
+decorator(app);
+
+```
+
+if we use enhance, which implemented by IoC and decorator.
+the dependencies is injected by something which made the app easy to test and scale up.
+
+the decorator may be just like this:
+
+```
+// for simplicity sake
+import a from '../../a.js'
+import b from '../../../b.js'
+import a from '../c.js'
+
+function decorator(app) {
+ return app({a, b, c})
+}
+
+```
+
+It's quit simple, but totally different.
+
+And we also can change the app's behaivor.
+
+```js
+function a() {console.log('a')}
+var _a = a;
+a = function() {
+ _a();
+ console.log('hello decorator')
+}
+a();
+// a
+// hello decorator
+
+```
+
+more elegant way:
+
+```js
+function a() {console.log('a')}
+function dec() {onsole.log('hello decorator')}
+
+compose(dec, a)
+
+```
 
 ## Abstraction Oriented
 The key of software development is to find out the variable and invariable.
