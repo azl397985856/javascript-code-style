@@ -1,4 +1,6 @@
 # javascript-code-style
+
+[中文版](https://github.com/azl397985856/javascript-code-style/blob/master/README.zh-CN.md)
 This repo contains almost everything about writtig good code especially when you'r building large apps.
 
 It mainly cover there four parts:
