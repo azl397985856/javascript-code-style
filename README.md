@@ -318,7 +318,7 @@ function decorator(app) {
 
 ```
 
-It's quit simple, but totally different.
+It's quite simple, but totally different.
 
 - app's params telling the truth
 - decoupled from dependencies
